@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		7818600F1FDE963800429ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7818600E1FDE963800429ECC /* AppDelegate.swift */; };
-		781860111FDE963800429ECC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781860101FDE963800429ECC /* ViewController.swift */; };
+		781860111FDE963800429ECC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781860101FDE963800429ECC /* CameraVC.swift */; };
 		781860141FDE963800429ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781860121FDE963800429ECC /* Main.storyboard */; };
 		781860161FDE963800429ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781860151FDE963800429ECC /* Assets.xcassets */; };
 		781860191FDE963800429ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781860171FDE963800429ECC /* LaunchScreen.storyboard */; };
+		781860241FDE9A6600429ECC /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781860231FDE9A6600429ECC /* RoundedShadowView.swift */; };
+		781860261FDE9C1100429ECC /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781860251FDE9C1100429ECC /* RoundedShadowButton.swift */; };
+		781860281FDE9C6100429ECC /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781860271FDE9C6100429ECC /* RoundedShadowImageView.swift */; };
+		789116001FE3EEFA001E8C83 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 789115FF1FE3EEF9001E8C83 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7818600B1FDE963800429ECC /* vision-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7818600E1FDE963800429ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		781860101FDE963800429ECC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		781860101FDE963800429ECC /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		781860131FDE963800429ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		781860151FDE963800429ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		781860181FDE963800429ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7818601A1FDE963800429ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		781860231FDE9A6600429ECC /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = SOURCE_ROOT; };
+		781860251FDE9C1100429ECC /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		781860271FDE9C6100429ECC /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		789115FF1FE3EEF9001E8C83 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		7818600D1FDE963800429ECC /* vision-app */ = {
 			isa = PBXGroup;
 			children = (
+				781860221FDE96A500429ECC /* Resources */,
+				781860211FDE969E00429ECC /* View */,
+				781860201FDE969700429ECC /* Controller */,
 				7818600E1FDE963800429ECC /* AppDelegate.swift */,
-				781860101FDE963800429ECC /* ViewController.swift */,
 				781860121FDE963800429ECC /* Main.storyboard */,
 				781860151FDE963800429ECC /* Assets.xcassets */,
 				781860171FDE963800429ECC /* LaunchScreen.storyboard */,
 				7818601A1FDE963800429ECC /* Info.plist */,
 			);
 			path = "vision-app";
+			sourceTree = "<group>";
+		};
+		781860201FDE969700429ECC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				781860101FDE963800429ECC /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		781860211FDE969E00429ECC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				781860231FDE9A6600429ECC /* RoundedShadowView.swift */,
+				781860251FDE9C1100429ECC /* RoundedShadowButton.swift */,
+				781860271FDE9C6100429ECC /* RoundedShadowImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		781860221FDE96A500429ECC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				789115FF1FE3EEF9001E8C83 /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				781860111FDE963800429ECC /* ViewController.swift in Sources */,
+				781860111FDE963800429ECC /* CameraVC.swift in Sources */,
+				789116001FE3EEFA001E8C83 /* SqueezeNet.mlmodel in Sources */,
 				7818600F1FDE963800429ECC /* AppDelegate.swift in Sources */,
+				781860241FDE9A6600429ECC /* RoundedShadowView.swift in Sources */,
+				781860261FDE9C1100429ECC /* RoundedShadowButton.swift in Sources */,
+				781860281FDE9C6100429ECC /* RoundedShadowImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
